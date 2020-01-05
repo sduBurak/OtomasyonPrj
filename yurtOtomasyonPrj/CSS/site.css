@@ -1,0 +1,100 @@
+﻿.navbar-inverse {
+    background-color: rgba(192, 193, 96, 0.8) !important;
+    border-color: rgba(192, 193, 96, 0.8) !important;
+}
+.navbar-brand {
+    color:black !important;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #352706;
+}
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #09a774 !important;
+    }
+.loginDiv {
+    position: absolute;
+    right: 22px;
+    top: 15px;
+    width: 78px;
+   /* background: green;*/
+    border-radius: 10px;
+}
+.loginButton {
+    width: 86px;
+    background: #f1eae8;
+    color: white;
+    border-radius: 24px;
+}
+.item img {
+    height: 400px !important;
+    width: 100%;
+}
+.otomasyonYonetDiv {
+    width: 100%;
+    height: 100%;
+    background: #fbfaf4;
+}
+.yonetimButton {
+    background: gray;
+    color: white;
+    height: 38px;
+    border-radius: 14px;
+    margin-left: 117px;
+    min-width: 125px;
+    padding: 13px;
+}
+.sayfaArkaPlanTemplate {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.searchDiv {
+    position: absolute;
+    top: 2px;
+    left: -148px;
+    background: whitesmoke;
+    color: black;
+    width: 130px;
+    height: 25px;
+   
+}
+.yükseklik {
+   height: 80px;
+}
+.tabloformları{
+    height: 430px;
+    width: 430px;
+
+}
+#MainContent_personelGridView {
+    border-collapse: collapse;
+    width: 100%;
+    background: rgba(43, 139, 160, 0.9);
+    color: white;
+    border-color: white;
+}
+th {
+    text-align: center;
+    background: #0d4c71;
+    height: 36px;
+    font-size: 16px;
+}
+#MainContent_personelGridView a {
+    color: white;
+    text-decoration: none;
+}
+
+#MainContent_personelGridView tr:nth-child(even) {
+    background: #6d6b6b;
+}
+
+#MainContent_personelGridView tr:nth-child(odd) {
+    background: #8fb2d6;
+}
+.grvAddButton {
+    color: black;
+    width: 100%;
+}
+#MainContent_personelGridView input {
+color:black;
+}
