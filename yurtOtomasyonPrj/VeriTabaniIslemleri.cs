@@ -444,12 +444,12 @@ namespace yurtOtomasyonPrj
         }
         //ögrenci ekle
         public void ogrenciEkle(string connectionString, string ogr_ad, string ogr_soyad, string ogr_bolum_ad,
-          string ogr_sinif, string ogr_tel, string ogr_sehir, DateTime ogr_kayıt_tarihi, int ogr_kat, int ogr_oda_no,
+          string ogr_sinif, string ogr_tel, string ogr_sehir, DateTime ogr_kayit_tarihi, int ogr_kat, int ogr_oda_no,
           int ogr_yatak_no)
         {
 
-            string query = "insert into OGRENCILER(ogr_ad,ogr_soyad,ogr_bolum_ad,ogr_sinif,ogr_tel,ogr_sehir,ogr_kayıt_tarihi,ogr_kat,ogr_oda_no,ogr_yatak_no)" +
-                " VALUES (@ogr_ad,@ogr_soyad,@ogr_bolum_ad,@ogr_sinif,@ogr_tel,@ogr_sehir,@ogr_kayıt_tarihi,@ogr_kat,@ogr_oda_no,@ogr_yatak_no)";
+            string query = "insert into OGRENCILER(ogr_ad,ogr_soyad,ogr_bolum_ad,ogr_sinif,ogr_tel,ogr_sehir,ogr_kayit_tarihi,ogr_kat,ogr_oda_no,ogr_yatak_no)" +
+                " VALUES (@ogr_ad,@ogr_soyad,@ogr_bolum_ad,@ogr_sinif,@ogr_tel,@ogr_sehir,@ogr_kayit_tarihi,@ogr_kat,@ogr_oda_no,@ogr_yatak_no)";
             try
             {
                 using (SqlConnection con = new SqlConnection(connectionString))
@@ -464,7 +464,7 @@ namespace yurtOtomasyonPrj
                         cmd.Parameters.AddWithValue("@ogr_tel", ogr_tel);
                         cmd.Parameters.AddWithValue("@ogr_sehir", ogr_sehir);
 
-                        cmd.Parameters.AddWithValue("@ogr_kayıt_tarihi", ogr_kayıt_tarihi);
+                        cmd.Parameters.AddWithValue("@ogr_kayit_tarihi", ogr_kayit_tarihi);
                         cmd.Parameters.AddWithValue("@ogr_kat", ogr_kat);
                         cmd.Parameters.AddWithValue("@ogr_oda_no", ogr_oda_no);
 
@@ -553,9 +553,9 @@ namespace yurtOtomasyonPrj
             }
         }
 
-        public bool ogrencıguncelle(string connectionString, string query, int ogr_id,
-            string ogr_ad, string ogr_soyad, string ogr_bolum_ad, string ogr_sinif,string ogr_tel,string ogr_sehir,DateTime ogr_kayıt_tarihi,
-            string ogr_kat,string ogr_oda_no,string ogr_yatak_no)
+        public bool ogrencıguncelle(string connectionString, string query, int ogr_id, string ogr_ad, string ogr_soyad, string ogr_bolum_ad,
+          string ogr_sinif, string ogr_tel, string ogr_sehir, DateTime ogr_kayit_tarihi, string ogr_kat, string ogr_oda_no,
+          string ogr_yatak_no)
         {
             //pkod=@pkod,psoyad=@psoyad,ptcno=@ptcno
 
@@ -572,7 +572,7 @@ namespace yurtOtomasyonPrj
                         cmd.Parameters.AddWithValue("@ogr_sinif", ogr_sinif);
                         cmd.Parameters.AddWithValue("@ogr_tel", ogr_tel);
                         cmd.Parameters.AddWithValue("@ogr_sehir", ogr_sehir);
-                        cmd.Parameters.AddWithValue("@ogr_kayıt_tarihi", ogr_kayıt_tarihi);
+                        cmd.Parameters.AddWithValue("@ogr_kayit_tarihi", ogr_kayit_tarihi);
                         cmd.Parameters.AddWithValue("@ogr_kat", ogr_kat);
                         cmd.Parameters.AddWithValue("@ogr_oda_no", ogr_oda_no);
                         cmd.Parameters.AddWithValue("@ogr_yatak_no", ogr_yatak_no);

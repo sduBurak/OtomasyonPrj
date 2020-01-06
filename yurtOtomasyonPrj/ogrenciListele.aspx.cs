@@ -63,7 +63,7 @@ namespace yurtOtomasyonPrj
             string ogr_sinif = ((TextBox)row.Cells[4].Controls[0]).Text.ToString();
             string ogr_tel = ((TextBox)row.Cells[5].Controls[0]).Text.ToString();
             string ogr_sehir = ((TextBox)row.Cells[6].Controls[0]).Text.ToString();
-            string ogr_kayıt_tarihi = ((TextBox)row.Cells[7].Controls[0]).Text.ToString();
+            string ogr_kayit_tarihi = ((TextBox)row.Cells[7].Controls[0]).Text.ToString();
             string ogr_kat = ((TextBox)row.Cells[8].Controls[0]).Text.ToString();
             string ogr_oda_no = ((TextBox)row.Cells[9].Controls[0]).Text.ToString();
             string ogr_yatak_no = ((TextBox)row.Cells[10].Controls[0]).Text.ToString();
@@ -73,10 +73,11 @@ namespace yurtOtomasyonPrj
 
             //(pkod,psoyad,ptcno,padres,pevtel,pceptel,pgtarih,pmaas,pbilgi,psskno,kul_adi,psifre
             string query = "update OGRENCILER set ogr_ad=@ogr_ad,ogr_soyad=@ogr_soyad,ogr_bolum_ad=@ogr_bolum_ad,ogr_sinif=@ogr_sinif,ogr_tel=@ogr_tel," +
-                "ogr_sehir=@ogr_sehir,ogr_kayıt_tarihi=@ogr_kayıt_tarihi,ogr_kat=@ogr_kat,ogr_oda_no=@ogr_oda_no,ogr_yatak_no=@ogr_yatak_no WHERE id=@ID";
+                "ogr_sehir=@ogr_sehir,ogr_kayit_tarihi=@ogr_kayit_tarihi,ogr_kat=@ogr_kat,ogr_oda_no=@ogr_oda_no,ogr_yatak_no=@ogr_yatak_no WHERE id=@ID";
 
-            vti.ogrencıguncelle(kaynak, query, personelId, ogr_ad, ogr_soyad, ogr_bolum_ad, ogr_sinif, Convert.ToInt32(ogr_tel) , ogr_sehir, DateTime.TryParse(Convert.ToString(ogr_kayıt_tarihi) ,
-                Convert.ToInt32(ogr_kat) , Convert.ToInt32(ogr_oda_no), Convert.ToInt32(ogr_yatak_no) );
+            vti.ogrencıguncelle(kaynak, query, personelId, ogr_ad, ogr_soyad, ogr_bolum_ad, ogr_sehir, ogr_sinif, ogr_tel,
+                 Convert.ToDateTime(ogr_kayit_tarihi),ogr_kat,ogr_oda_no,
+                ogr_yatak_no);
             this.ogrenciListeleDoldur();
             /* conn.Open();
              //SqlCommand cmd = new SqlCommand("SELECT * FROM detail", conn);  

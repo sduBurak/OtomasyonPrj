@@ -23,10 +23,7 @@
                     <td><input type="text" name="personelTel" value=""></td>
                 </tr>
 
-                 <tr>
-                    <td>Personel Yaşı:</td>
-                    <td><input type="text" name="personelyası" value=""></td>
-                </tr>
+                 
 
                  <tr>
                     <td>Personel kimlik numarası:</td>

@@ -31,12 +31,12 @@ namespace yurtOtomasyonPrj
                 string ogr_soyad = nvclc["ogr_soyad"];
 
                 string ogr_bolum_ad = nvclc["ogr_bolum_ad"];
-                string ogr_kayıt_tarihi = nvclc["ogr_kayıt_tarihi"];
+                string ogr_kayit_tarihi = nvclc["ogr_kayit_tarihi"];
                 DateTime dt = new DateTime();
-                if ((DateTime.TryParse(Convert.ToString(ogr_kayıt_tarihi), out dt)))
+                if ((DateTime.TryParse(Convert.ToString(ogr_kayit_tarihi), out dt)))
                 {
                     //read the Date here
-                    ogr_kayıt_tarihi = dt.ToString("dd-MMM-yyyy");
+                    ogr_kayit_tarihi = dt.ToString("dd-MMM-yyyy");
                 }
 
                 string ogr_sinif = nvclc["ogr_sinif"];
@@ -53,7 +53,7 @@ namespace yurtOtomasyonPrj
 
                 VeriTabaniIslemleri vti = new VeriTabaniIslemleri();
                 vti.ogrenciEkle(kaynak, ogr_ad, ogr_soyad, ogr_bolum_ad, ogr_sehir, ogr_sinif, ogr_tel,
-                 Convert.ToDateTime(ogr_kayıt_tarihi), Convert.ToInt32(ogr_kat), Convert.ToInt32(ogr_oda_no),
+                 Convert.ToDateTime(ogr_kayit_tarihi), Convert.ToInt32(ogr_kat), Convert.ToInt32(ogr_oda_no),
                  Convert.ToInt32(ogr_yatak_no));
 
                 

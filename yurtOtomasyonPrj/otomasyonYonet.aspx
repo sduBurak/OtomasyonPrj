@@ -36,15 +36,7 @@
                        
                     </td>
 
-                    <td>
-                        <a class="yonetimButton" runat="server" href="~/ogrenciEkle">Ögrenci ekle</a>
-                       
-                    </td>
-
-                        <td>
-                        <a class="yonetimButton" runat="server" href="~/ogrenciEkle">Ögrenci Güncelle</a>
-                       
-                    </td>
+                    
                 </tr>
 
                
