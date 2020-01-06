@@ -27,11 +27,7 @@
                    
                 </tr>
 
-                 <tr>
-                    <td>Personel Yaşı:</td>
-                     <td> <asp:Label ID="personelYası" runat="server"></asp:Label></td>
-                    
-                </tr>
+                 
 
                  <tr>
                     <td>Personel kimlik numarası:</td>

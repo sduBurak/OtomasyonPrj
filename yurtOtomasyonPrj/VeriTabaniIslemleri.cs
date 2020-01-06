@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Web;
+using static System.Collections.Specialized.BitVector32;
 
 namespace yurtOtomasyonPrj
 {
@@ -116,6 +117,38 @@ namespace yurtOtomasyonPrj
                     }           
             }
             return dt;
+        }
+
+        public void yetkiKontrol(string connectionString, string kul_adi1, string psifre1)
+        {
+
+            string query = "SELECT * FROM PERSONEL WHERE kul_adi=@kul_adi1 and psifre=@psifre1";
+            
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query))
+                {
+                    cmd.Parameters.AddWithValue("@kul_adi1", kul_adi1);
+                    cmd.Parameters.AddWithValue("@psifre1", psifre1);
+                   
+                    cmd.Connection = con;
+                    con.Open();
+
+                    if (cmd.ExecuteScalar().ToString() == "1")
+                    {
+                        //Yetkili
+                       
+                    }
+                    else
+                    {
+                        //Yetkisiz
+                    }
+
+                    
+                    con.Close();
+                }
+            }
+           // return dt;
         }
         public bool personelSil(string connectionString,int personelId)
         {
@@ -521,7 +554,8 @@ namespace yurtOtomasyonPrj
         }
 
         public bool ogrencıguncelle(string connectionString, string query, int ogr_id,
-            string ogr_ad, string ogr_soyad, string ogr_bolum_ad, string ogr_sinif)
+            string ogr_ad, string ogr_soyad, string ogr_bolum_ad, string ogr_sinif,string ogr_tel,string ogr_sehir,DateTime ogr_kayıt_tarihi,
+            string ogr_kat,string ogr_oda_no,string ogr_yatak_no)
         {
             //pkod=@pkod,psoyad=@psoyad,ptcno=@ptcno
 
@@ -536,11 +570,12 @@ namespace yurtOtomasyonPrj
                         cmd.Parameters.AddWithValue("@ogr_soyad", ogr_soyad);
                         cmd.Parameters.AddWithValue("@ogr_bolum_ad", ogr_bolum_ad);
                         cmd.Parameters.AddWithValue("@ogr_sinif", ogr_sinif);
-                        cmd.Parameters.AddWithValue("@ogr_sinif", ogr_sinif);
-                        cmd.Parameters.AddWithValue("@ogr_sinif", ogr_sinif);
-                        cmd.Parameters.AddWithValue("@ogr_sinif", ogr_sinif);
-                        cmd.Parameters.AddWithValue("@ogr_sinif", ogr_sinif);
-                        cmd.Parameters.AddWithValue("@ogr_sinif", ogr_sinif);
+                        cmd.Parameters.AddWithValue("@ogr_tel", ogr_tel);
+                        cmd.Parameters.AddWithValue("@ogr_sehir", ogr_sehir);
+                        cmd.Parameters.AddWithValue("@ogr_kayıt_tarihi", ogr_kayıt_tarihi);
+                        cmd.Parameters.AddWithValue("@ogr_kat", ogr_kat);
+                        cmd.Parameters.AddWithValue("@ogr_oda_no", ogr_oda_no);
+                        cmd.Parameters.AddWithValue("@ogr_yatak_no", ogr_yatak_no);
 
                         cmd.Connection = con;
                         con.Open();

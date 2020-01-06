@@ -21,12 +21,7 @@
                         
                         <asp:CommandField ShowEditButton="true" />  
                         <asp:CommandField ShowDeleteButton="true" />
-                         <asp:TemplateField HeaderText="">
-                <ItemTemplate>
-                 <asp:LinkButton ID="ButtonAdd" runat="server" Text="Profile" 
-                        onclick="ButtonAdd_Click" CssClass="grvAddButton" OnClientClick="return ValidateEmptyValue();return validate()" />
-                </ItemTemplate>
-            </asp:TemplateField>
+             
                     </Columns>  
                 </asp:GridView> 
 

@@ -54,7 +54,7 @@
                         <li><a runat="server" href="~/">Anasayfa</a></li>
                         <li><a runat="server" href="~/About">Hakkımızda</a></li>
                         <li><a runat="server" href="~/Contact">İletişim</a></li>
-                        <li><a runat="server" href="~/otomasyonYonet">Yonetim Sayfası</a></li>
+                        <li ID="yonetim" runat="server"><a runat="server" href="~/otomasyonYonet">Yonetim Sayfası</a></li>
                          <li><a runat="server" href="~/imkanlarımız">İmkanlarımız</a></li>
                     </ul>
                 </div>
