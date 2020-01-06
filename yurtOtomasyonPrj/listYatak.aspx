@@ -10,7 +10,7 @@
                  OnRowEditing="GridView1_RowEditing"
                  OnRowUpdating="GridView1_RowUpdating">  
                     <Columns>  
-                        <asp:BoundField DataField="id" HeaderText="Oda No" InsertVisible="False" ReadOnly="True" />  
+                        <asp:BoundField DataField="id" HeaderText="Oda ID" InsertVisible="False" ReadOnly="True" />  
                         <asp:BoundField DataField="yatak_numarasi" HeaderText="Yatak Numarasi" />  
                         <asp:BoundField DataField="yatak_durumu" HeaderText="Yatak Durumu" />  
                         <asp:BoundField DataField="oda_id" HeaderText="Oda Numarası" /> 

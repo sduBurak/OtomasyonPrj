@@ -13,16 +13,12 @@
                         <a class="yonetimButton" runat="server" href="~/personelListele">Personel Listele</a>
                        
                     </td>
-                </tr>
-
-                 <tr>
+                
                     <td>
                         <a class="yonetimButton" runat="server" href="~/listYatak">Yatak Listele</a>
                        
                     </td>
-                </tr>
-
-                 <tr>
+                
                     <td>
                         <a class="yonetimButton" runat="server" href="~/odalarListele">Odalar Listele</a>
                        

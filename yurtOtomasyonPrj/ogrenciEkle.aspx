@@ -38,7 +38,7 @@
 
                 <tr>
                     <td>Ögrenci Kayıt Tarihi:</td>
-                    <td><input type="text" name="ogr_kayıt_tarihi" value=""></td>
+                    <td><input type="text" name="ogr_kayit_tarihi" value=""></td>
                 </tr>
 
                 <tr>

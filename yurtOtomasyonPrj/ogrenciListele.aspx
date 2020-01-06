@@ -31,7 +31,7 @@
                 </asp:GridView> 
 
 
-           <a runat="server" href="~/ogrenciEkle"> <input type="button" value="Personel Ekle" class="submit"></a>
+           <a runat="server" href="~/ogrenciEkle"> <input type="button" value="Öğrenci Ekle" class="submit"></a>
 
      </div>
 </asp:Content>

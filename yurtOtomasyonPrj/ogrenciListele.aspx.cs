@@ -75,7 +75,7 @@ namespace yurtOtomasyonPrj
             string query = "update OGRENCILER set ogr_ad=@ogr_ad,ogr_soyad=@ogr_soyad,ogr_bolum_ad=@ogr_bolum_ad,ogr_sinif=@ogr_sinif,ogr_tel=@ogr_tel," +
                 "ogr_sehir=@ogr_sehir,ogr_kayit_tarihi=@ogr_kayit_tarihi,ogr_kat=@ogr_kat,ogr_oda_no=@ogr_oda_no,ogr_yatak_no=@ogr_yatak_no WHERE id=@ID";
 
-            vti.ogrencıguncelle(kaynak, query, personelId, ogr_ad, ogr_soyad, ogr_bolum_ad, ogr_sehir, ogr_sinif, ogr_tel,
+            vti.ogrencıguncelle(kaynak, query, personelId, ogr_ad, ogr_soyad, ogr_bolum_ad, ogr_sinif, ogr_tel, ogr_sehir,
                  Convert.ToDateTime(ogr_kayit_tarihi),ogr_kat,ogr_oda_no,
                 ogr_yatak_no);
             this.ogrenciListeleDoldur();

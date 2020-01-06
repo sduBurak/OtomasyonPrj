@@ -52,7 +52,7 @@ namespace yurtOtomasyonPrj
                 DateTime now = DateTime.Now;
 
                 VeriTabaniIslemleri vti = new VeriTabaniIslemleri();
-                vti.ogrenciEkle(kaynak, ogr_ad, ogr_soyad, ogr_bolum_ad, ogr_sehir, ogr_sinif, ogr_tel,
+                vti.ogrenciEkle(kaynak, ogr_ad, ogr_soyad, ogr_bolum_ad, ogr_sinif, ogr_tel, ogr_sehir,
                  Convert.ToDateTime(ogr_kayit_tarihi), Convert.ToInt32(ogr_kat), Convert.ToInt32(ogr_oda_no),
                  Convert.ToInt32(ogr_yatak_no));
 
