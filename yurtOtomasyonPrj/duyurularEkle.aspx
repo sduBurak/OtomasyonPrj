@@ -3,43 +3,50 @@
      <h2>Duyuru Ekleme Sayfası</h2>
 
      <div style="height: 400px;" class="sayfaArkaPlanTemplate">
-                                 <form method="post" action="">
+         <form method="post" action="">
 
-                                    <table>
-                                        <tr>
-                                            <td>Personel Adi:</td>
-                                            <td><input type="text" name="personelAdi" value=""></td>
-                                        </tr>
+            <table>
+                <tr>
+                    <td>Duyuru İçerik:</td>
+                    <td><input type="text" name="d_icerik" value=""></td>
+                </tr>
 
-                                          <tr>
-                                            <td>Personel Soyad:</td>
-                                            <td><input type="text" name="personelSoyad" value=""></td>
-                                        </tr>
+                  <tr>
+                    <td>Duyuru Konu:</td>
+                    <td><input type="text" name="d_liste" value=""></td>
+                </tr>
 
-                                          <tr>
-                                            <td>Personel Teli:</td>
-                                            <td><input type="text" name="personelTel" value=""></td>
-                                        </tr>
+                  <tr>
+                    <td>Duyuru Başlık:</td>
+                    <td><input type="text" name="d_baslık" value=""></td>
+                </tr>
 
-                                         <tr>
-                                            <td>Personel Yaşı:</td>
-                                            <td><input type="text" name="personelyası" value=""></td>
-                                        </tr>
+                 <tr>
+                    <td>Duyuru Yayınlanma Tarihi:</td>
+                    <td><input type="text" name="d_yayin_tarihi" value=""></td>
+                </tr>
 
-                                         <tr>
-                                            <td>Personel kimlik numarası:</td>
-                                            <td><input type="text" name="personelkimliknumarası" value=""></td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">
+                 <tr>
+                    <td>Duyuru Yayınlanacak Süre(gün):</td>
+                    <td><input type="text" name="d_yayın_sure" value=""></td>
+                </tr>
 
-                                                <input type="submit" value="Submit" class="submit">
-                                            </td>
+                <tr>
+                    <td>Duyuru Açıklama:</td>
+                    <td><input type="text" name="d_olusturma" value=""></td>
+                </tr>
 
-                                        </tr>
-                                    </table>
+               
+                <tr>
+                    <td colspan="2">
 
-                        </form> 
+                        <input type="submit" value="Ekle" class="submit">
+                    </td>
+
+                </tr>
+            </table>
+
+          </form> 
 
      </div>
 </asp:Content>

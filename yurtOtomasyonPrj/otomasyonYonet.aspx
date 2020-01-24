@@ -33,23 +33,13 @@
                     </td>
 
                     
-                </tr>
-
-               
-
-                 <tr>
+              
                     <td>
                         <a class="yonetimButton" runat="server" href="~/duyurularListele">Duyuruları Listele</a>
                        
                     </td>
-                    <td>
-                        <a class="yonetimButton" runat="server" href="~/duyurularEkle">Duyuru Ekle</a>
-                       
-                    </td>
-                    <td>
-                        <a class="yonetimButton" runat="server" href="~/duyurularEkle">Duyuru Güncelle</a>
-                       
-                    </td>
+                   
+                   
                 </tr>
 
             </table>

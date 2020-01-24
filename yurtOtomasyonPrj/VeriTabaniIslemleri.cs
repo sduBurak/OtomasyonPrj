@@ -590,5 +590,143 @@ namespace yurtOtomasyonPrj
                 throw new Exception("Exception GetFieldsDictionary: ", ex);
             }
         }
+        //duyuru ekle
+        public void duyuruEkle(string connectionString, string d_icerik, string d_liste, string d_baslık,
+         DateTime d_yayin_tarihi, int d_yayın_sure, string d_olusturma)
+        {
+
+            string query = "insert into DUYURULAR(d_icerik,d_liste,d_baslık,d_yayin_tarihi,d_yayın_sure,d_olusturma)" +
+                " VALUES (@d_icerik,@d_liste,@d_baslık,@d_yayin_tarihi,@d_yayın_sure,@d_olusturma)";
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand(query))
+                    {
+                        cmd.Parameters.AddWithValue("@d_icerik", d_icerik);
+                        cmd.Parameters.AddWithValue("@d_liste", d_liste);
+                        cmd.Parameters.AddWithValue("@d_baslık", d_baslık);
+
+                        cmd.Parameters.AddWithValue("@d_yayin_tarihi", d_yayin_tarihi);
+                        cmd.Parameters.AddWithValue("@d_yayın_sure", d_yayın_sure);
+                        cmd.Parameters.AddWithValue("@d_olusturma", d_olusturma);
+
+                        
+
+
+                        cmd.Connection = con;
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Exception GetFieldsDictionary: ", ex);
+            }
+
+        }
+        public DataTable tumDuyuruGetir(string connectionString)
+        {
+
+            string query = "SELECT * FROM DUYURULAR";
+            DataTable dt = null;
+            using (SqlConnection myConnection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, myConnection))
+                {
+                    myConnection.Open();
+                    SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                    dt = new DataTable();
+                    dt.Load(dr);
+
+                }
+            }
+            return dt;
+        }
+        public DataTable seciliDuyuruGetir(string connectionString, int ogr_id)
+        {
+
+            string query = "SELECT * FROM DUYURULAR WHERE id=@ID";
+            DataTable dt = null;
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query))
+                {
+                    cmd.Parameters.AddWithValue("@ID", ogr_id);
+
+
+
+                    cmd.Connection = con;
+                    con.Open();
+                    SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                    dt = new DataTable();
+                    dt.Load(dr);
+                    con.Close();
+                }
+            }
+            return dt;
+        }
+        public bool duyuruSil(string connectionString, int ogr_id)
+        {
+
+            string query = "delete FROM DUYURULAR WHERE id=@ID";
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand(query))
+                    {
+                        cmd.Parameters.AddWithValue("@ID", ogr_id);
+
+
+
+                        cmd.Connection = con;
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Exception GetFieldsDictionary: ", ex);
+            }
+        }
+
+        public bool duyuruguncelle(string connectionString, string query, int ogr_id, string d_icerik, string d_liste, string d_baslık,
+          DateTime d_yayin_tarihi, string d_yayın_sure, string d_olusturma)
+        {
+            //pkod=@pkod,psoyad=@psoyad,ptcno=@ptcno
+
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand(query))
+                    {
+                        cmd.Parameters.AddWithValue("@ID", ogr_id);
+                        cmd.Parameters.AddWithValue("@d_icerik", d_icerik);
+                        cmd.Parameters.AddWithValue("@d_liste", d_liste);
+                        cmd.Parameters.AddWithValue("@d_baslık", d_baslık);
+                        cmd.Parameters.AddWithValue("@d_yayin_tarihi", d_yayin_tarihi);
+                        cmd.Parameters.AddWithValue("@d_yayın_sure", d_yayın_sure);
+                        cmd.Parameters.AddWithValue("@d_olusturma", d_olusturma);
+                        
+                        cmd.Connection = con;
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Exception GetFieldsDictionary: ", ex);
+            }
+        }
     }
 }
