@@ -105,7 +105,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="2faSayfası.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -129,20 +128,22 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="listYatak.aspx" />
-    <Content Include="yatakEkle.aspx" />
+    <Content Include="resimler\k1.jpg" />
+    <Content Include="resimler\k2.jpg" />
+    <Content Include="resimler\k3.jpg" />
+    <Content Include="resimler\k4.jpg" />
+    <Content Include="resimler\k8jpg.jpg" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="imkanlarımız.aspx" />
     <Content Include="izinAlma.aspx" />
     <Content Include="kayıtSayfası.aspx" />
-    <Content Include="odaEkle.aspx" />
-    <Content Include="odalarGorunum.aspx" />
-    <Content Include="odalarListele.aspx" />
     <Content Include="ogrenciEkle.aspx" />
     <Content Include="ogrenciListele.aspx" />
     <Content Include="otomasyonYonet.aspx" />
     <Content Include="personelEkle.aspx" />
-    <Content Include="personelListele.aspx" />
+    <Content Include="personelListele.aspx">
+      <BrowseToURL>~/personelListele.aspx</BrowseToURL>
+    </Content>
     <Content Include="personelProfile.aspx" />
     <Content Include="profilBilgileri.aspx" />
     <Content Include="resimler\02.jpg" />
@@ -191,13 +192,6 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2faSayfası.aspx.cs">
-      <DependentUpon>2faSayfası.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="2faSayfası.aspx.designer.cs">
-      <DependentUpon>2faSayfası.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -265,34 +259,6 @@
     </Compile>
     <Compile Include="kayıtSayfası.aspx.designer.cs">
       <DependentUpon>kayıtSayfası.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="listYatak.aspx.cs">
-      <DependentUpon>listYatak.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="listYatak.aspx.designer.cs">
-      <DependentUpon>listYatak.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="odaEkle.aspx.cs">
-      <DependentUpon>odaEkle.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="odaEkle.aspx.designer.cs">
-      <DependentUpon>odaEkle.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="odalarGorunum.aspx.cs">
-      <DependentUpon>odalarGorunum.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="odalarGorunum.aspx.designer.cs">
-      <DependentUpon>odalarGorunum.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="odalarListele.aspx.cs">
-      <DependentUpon>odalarListele.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="odalarListele.aspx.designer.cs">
-      <DependentUpon>odalarListele.aspx</DependentUpon>
     </Compile>
     <Compile Include="ogrenciEkle.aspx.cs">
       <DependentUpon>ogrenciEkle.aspx</DependentUpon>
@@ -366,13 +332,6 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="yatakEkle.aspx.cs">
-      <DependentUpon>yatakEkle.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="yatakEkle.aspx.designer.cs">
-      <DependentUpon>yatakEkle.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

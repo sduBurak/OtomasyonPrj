@@ -37,22 +37,22 @@
                 </tr>
 
                 <tr>
-                    <td>Ögrenci Kayıt Tarihi:</td>
+                    <td>Kitap Alım Tarihi:</td>
                     <td><input type="text" name="ogr_kayit_tarihi" value=""></td>
                 </tr>
 
                 <tr>
-                    <td>Ögrenci Kaldığı Kat:</td>
+                    <td>İade Süresi:</td>
                     <td><input type="text" name="ogr_kat" value=""></td>
                 </tr>
 
                 <tr>
-                    <td>Ögrenci Oda Numarası:</td>
+                    <td>Aldıgı Kitap Sayısı:</td>
                     <td><input type="text" name="ogr_oda_no" value=""></td>
                 </tr>
 
                 <tr>
-                    <td>Ögrenci Yatak numarası:</td>
+                    <td>Gecikme Süresi:</td>
                     <td><input type="text" name="ogr_yatak_no" value=""></td>
                 </tr>
                 <tr>

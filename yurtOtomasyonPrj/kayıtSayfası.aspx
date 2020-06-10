@@ -20,8 +20,7 @@
                      <tr>
                         <td colspan="2">
                          <input type="submit" value="Giris" class="submit">
-                              <input type="submit" value="Facebook" class="submit">
-                              <input type="submit" value="Google" class="submit">
+                              
                         </td>
 
                     </tr>

@@ -20,10 +20,10 @@
                          <asp:BoundField DataField="ogr_sinif" HeaderText="Sınıfı" />  
                           <asp:BoundField DataField="ogr_tel" HeaderText="Telefon Numarası" />  
                           <asp:BoundField DataField="ogr_sehir" HeaderText="Şehir" />  
-                          <asp:BoundField DataField="ogr_kayit_tarihi" HeaderText="Kayıt Tarihi" />  
-                          <asp:BoundField DataField="ogr_kat" HeaderText="Kat" />  
-                          <asp:BoundField DataField="ogr_oda_no" HeaderText="Oda Numarası" />  
-                          <asp:BoundField DataField="ogr_yatak_no" HeaderText="Yatak Numarası" />  
+                          <asp:BoundField DataField="ogr_kayit_tarihi" HeaderText="Kitap Alım Tarihi" />  
+                          <asp:BoundField DataField="ogr_kat" HeaderText="İade Süresi" />  
+                          <asp:BoundField DataField="ogr_oda_no" HeaderText="Aldıgı Kitap Sayısı" />  
+                          <asp:BoundField DataField="ogr_yatak_no" HeaderText="Gecikme Süresi" />  
                         <asp:CommandField ShowEditButton="true" />  
                         <asp:CommandField ShowDeleteButton="true" />
                      

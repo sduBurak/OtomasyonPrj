@@ -3,24 +3,24 @@
 
 
     <div>
-        <h2>Yurt Yonetimi</h2>
+        <h2>Kütüphane Yönetimi</h2>
 
         <div style="height: 400px;">
             <table class="otomasyonYonetDiv">
 
                 <tr>
                     <td>
-                        <a class="yonetimButton" runat="server" href="~/personelListele">Personel Listele</a>
+                        <a class="yonetimButton" runat="server" href="~/personelListele">Kitapları Listele</a>
                        
                     </td>
                 
                     <td>
-                        <a class="yonetimButton" runat="server" href="~/listYatak">Yatak Listele</a>
+                        
                        
                     </td>
                 
                     <td>
-                        <a class="yonetimButton" runat="server" href="~/odalarListele">Odalar Listele</a>
+                       
                        
                     </td>
                     

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="personelListele.aspx.cs" Inherits="yurtOtomasyonPrj.personelListele" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Personel Listeleme Sayfası</h2>
+    <h2>Kitap Listeleme Sayfası</h2>
 
      <div style="height: 400px;" class="sayfaArkaPlanTemplate">
 
@@ -13,11 +13,11 @@
                  OnRowEditing="GridView1_RowEditing"
                  OnRowUpdating="GridView1_RowUpdating">  
                     <Columns>  
-                        <asp:BoundField DataField="id" HeaderText="Personel No" InsertVisible="False" ReadOnly="True" />  
-                        <asp:BoundField DataField="pkod" HeaderText="Isim" />  
-                        <asp:BoundField DataField="psoyad" HeaderText="Soyisim" />  
-                        <asp:BoundField DataField="ptcno" HeaderText="Tc No" />  
-                         <asp:BoundField DataField="padres" HeaderText="Adres" />  
+                        <asp:BoundField DataField="id" HeaderText="Kitap No" InsertVisible="False" ReadOnly="True" />  
+                        <asp:BoundField DataField="pkod" HeaderText="Kitap Adı" />  
+                        <asp:BoundField DataField="psoyad" HeaderText="Yazarı" />  
+                        <asp:BoundField DataField="ptcno" HeaderText="Raf No" />  
+                         <asp:BoundField DataField="padres" HeaderText="Basım Yılı" />  
                         <asp:CommandField ShowEditButton="true" />  
                         <asp:CommandField ShowDeleteButton="true" />
                          <asp:TemplateField HeaderText="">
@@ -30,7 +30,7 @@
                 </asp:GridView> 
 
 
-           <a runat="server" href="~/personelEkle"> <input type="button" value="Personel Ekle" class="submit"></a>
+           <a runat="server" href="~/personelEkle"> <input type="button" value="Kitap Ekle" class="submit"></a>
 
      </div>
 

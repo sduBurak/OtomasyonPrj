@@ -15,14 +15,14 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="/resimler/resim_03.jpg" alt="Los Angeles">
+                  <img src="/resimler/k8jpg.jpg" alt="Los Angeles">
                 </div>
 
                 <div class="item">
-                  <img src="/resimler/02.jpg" alt="New York">
+                  <img src="/resimler/k2.jpg" alt="New York">
                 </div>
                   <div class="item">
-                  <img src="/resimler/03.jpg" alt="tietgen">
+                  <img src="/resimler/k3.jpg" alt="tietgen">
                 </div>
               </div>
 
@@ -60,7 +60,7 @@
            </table>
         </div>
         <div class="col-md-4">           
-            <a runat="server" href="~/odalarGorunum"> <h2>Odalar Ve Doluluk Durumu</h2></a>
+            <a runat="server" href="~/odalarGorunum"> <h2>Çalışma Alanlarımız</h2></a>
            <table>
                <tr>
                    <td colspan="2">
@@ -78,7 +78,7 @@
            </table>
         </div>
         <div class="col-md-4">
-            <a runat="server" href="~/izinAlma"> <h2>Ögrenci İzin Alma</h2></a>
+            <a runat="server" href="~/izinAlma"> <h2>Ögrenci Kitap İzni alma</h2></a>
             <p>
                ögrencilerimizzzzz...
             </p>
